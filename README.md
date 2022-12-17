@@ -17,6 +17,29 @@ Exam is based on the latest minor version (x.**y**.z).
 - Application Environment, Configuration and Security (25%)
 - Services and Networking (20%)
 
+## Kubernetes resources
+
+Diagram illustrating Kubernetes resources that are
+relevant to the CKAD, and their relationship to the pod:
+
+```mermaid
+  graph TD;
+      Deployment-->|Replicates|Pod;
+      NetworkPolicy-->|Controls network traffic|Pod;
+      Service-->|Forwards network traffic|Pod;
+      Pod-->|Uses|ServiceAccount;
+      Pod-->|Consumes|Secret;
+      Secret-->|Extends|ConfigMap;
+      Pod-->|Consumes|ConfigMap;
+      Pod-->|Mounts|Volume;
+      Pod-->|Mounts|PersistentVolumeClaim;
+      PersistentVolumeClaim-->|Binds|PersistentVolume;
+      ResourceQuota-->|Controls resource usage|Pod;
+      Job-->|Creates|Pod;
+      CronJob-->|Extends|Job;
+      Ingress-->|Balances network traffic|Service;
+```
+
 ## Keywords
 
 <details>
