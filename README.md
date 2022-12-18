@@ -54,5 +54,35 @@ relevant to the CKAD, and their relationship to the pod:
 - CronJob
 - restartPolicy
 - activeDeadlineSeconds
+- Sidecar container
+- Ambassador container
+- Adapter container
+- Init container
+- Volume
+- VolumeMounts
+- hostPath
+  - types:
+    - Directory
+    - DirectoryOrCreate
+    - File
+    - FileOrCreate
+- emptyDir
+- persistentVolumeClaim
+- StorageClass 
 
 </details>
+
+## Exam tasks
+
+List of tasks to be comfortable with before taking the exam.
+
+Be able to accomplish these tasks using `kubectl` with `explain`, `--help`
+and the Kubernetes documentation.
+
+- Build a container image using a Dockerfile.
+- Create a Job and CronJob.
+- Add a sidecar container to an existing Pod or Deployment.
+- Add a Init container to a Pod or Deployment.
+- Define a PersistentVolume. Bind a PersistentVolumeClaim to it.
+- Configure a Pod to consume a PersistentVolumeClaim.
+- 
