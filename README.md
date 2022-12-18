@@ -69,6 +69,11 @@ relevant to the CKAD, and their relationship to the pod:
 - emptyDir
 - persistentVolumeClaim
 - StorageClass 
+- Deployment
+- Replicas
+- Scaling
+- Rolling update
+- 
 
 </details>
 
