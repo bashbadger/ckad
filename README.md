@@ -73,7 +73,35 @@ relevant to the CKAD, and their relationship to the pod:
 - Replicas
 - Scaling
 - Rolling update
-- 
+- Deployment strategy
+- Blue/green deployment
+- Canary deployment
+- Helm
+- Helm chart
+- Helm repository
+- API deprecation
+- Deprecation policy
+- apiVersion
+- Deprecation window
+- Deprecated API migration guide
+- Liveness probe
+- Readiness probe
+- Startup probe
+- Cluster level logs
+- Kubelet logs
+- CRDs
+- CustomResourceDefinition
+- Custom controllers
+- ServiceAccounts
+- ServiceAccount tokens
+- Admission controller
+- NameSpaceAutoProvision
+- Resource requests
+- Resource limits
+- ResourceQuota
+- ConfigMap
+- Secret
+- SecurityContext
 
 </details>
 
@@ -84,10 +112,24 @@ List of tasks to be comfortable with before taking the exam.
 Be able to accomplish these tasks using `kubectl` with `explain`, `--help`
 and the Kubernetes documentation.
 
-- Build a container image using a Dockerfile.
+- Build and tag a container image using a Dockerfile.
+- Save a container image to a tar archive.
 - Create a Job and CronJob.
 - Add a sidecar container to an existing Pod or Deployment.
 - Add a Init container to a Pod or Deployment.
 - Define a PersistentVolume. Bind a PersistentVolumeClaim to it.
 - Configure a Pod to consume a PersistentVolumeClaim.
-- 
+- Define environment variables for a container.
+- Create a blue/green deployment using deployments.
+- Create a canary deployment.
+- Add a liveness probe to a container.
+- Define a custom resource.
+- Create a ServiceAccount.
+- Assign a ServiceAccount to a pod.
+- Enable an admission controller (e.g. NameSpaceAutoProvision).
+- Configure a ResourceQuota and apply it to a namespace.
+- Create a ConfigMap and pass it to a container as an environment variable.
+- Create a Secret and pass it to a container as an environment variable.
+- Create a ConfigMap and pass it to a container via a volumeMount.
+- Create a Secret and pass it to a container via a volumeMount.
+- Configure Security contexts at the pod and container level.
