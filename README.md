@@ -19,8 +19,8 @@ Exam is based on the latest minor version (x.**y**.z).
 
 ## Kubernetes resources
 
-Diagram illustrating Kubernetes resources that are
-relevant to the CKAD, and their relationship to the pod:
+Kubernetes resources relevant to the CKAD, 
+and their relationship to the pod:
 
 ```mermaid
   graph TD;
