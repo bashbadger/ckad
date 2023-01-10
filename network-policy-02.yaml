@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: np-test-client
+  name: client-pod
+  namespace: np-test-b
+spec:
+  containers:
+  - image: radial/busyboxplus:curl
+    name: busybox
+    # Populate IP address with pod cluster IP from network-policy-01.yaml 
+    command: ['sh', '-c', 'while true; do curl -m 2 10.10.36.107; sleep 5; done']
+# Confirm client can reach server pod:
+# k logs client-pod -n np-test-b
