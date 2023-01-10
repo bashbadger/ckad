@@ -117,11 +117,6 @@ relevant to the CKAD, and their relationship to the pod:
 <details>
 <summary>Tasks to be comfortable with before taking the exam.</summary>
 
-Be able to accomplish these tasks using `kubectl` with `explain`, `--help`
-and the Kubernetes documentation.
-
-Use `kubectl create <resource> --help` for helpful examples.
-
 - Build and tag a container image using a Dockerfile.
 - Save a container image to a tar archive.
 - Create a Job and CronJob.
@@ -148,5 +143,10 @@ Use `kubectl create <resource> --help` for helpful examples.
 - Expose an application with ClusterIP and NodePort services.
 - Access ClusterIP and NodePort services.
 - Configure an ingress for a service.
+
+Be able to accomplish these tasks using `kubectl` with `explain`, `--help`
+and the Kubernetes documentation.
+
+Use `kubectl create <resource> --help` for helpful examples.
 
 </details>
