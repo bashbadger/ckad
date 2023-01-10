@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: np-test-a
+  labels:
+    team: ateam
+spec: {}
+status: {}
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: np-test-b
+  labels:
+    team: bteam
+spec: {}
+status: {}
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: np-test-server
+  name: server-pod
+  namespace: np-test-a
+spec:
+  containers:
+  - image: nginx
+    name: server-pod
+    ports:
+    - containerPort: 80
+# Get cluster IP:
+# k get pods server-pod -n np-test-a -o wide
+# Now apply network-policy-02.yaml
