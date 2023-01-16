@@ -122,11 +122,13 @@ and their relationship to the pod:
 - Create a Job and CronJob.
 - Add a sidecar container to an existing Pod or Deployment.
 - Add a Init container to a Pod or Deployment.
+- Label and un-label a pod.
 - Define a PersistentVolume. Bind a PersistentVolumeClaim to it.
 - Configure a Pod to consume a PersistentVolumeClaim.
 - Define environment variables for a container.
 - Create a blue/green deployment using deployments.
 - Create a canary deployment.
+- Perform a rolling update and roll back an update to a deployment.
 - Add a liveness probe to a container.
 - Define a custom resource.
 - Create a ServiceAccount.
